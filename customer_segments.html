@@ -12482,9 +12482,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p><em>样本1：只有detergents_paper的需求量大于平均值，这个应该是零售商</em></p>
+<p><em>样本1：只有 detergents_paper 的需求量大于平均值，这个应该是零售商</em></p>
 <p><em>样本2：Fresh，Milk, Delicatessen 商品需求量都比较大，应该是饭馆一类的大型餐饮场所</em></p>
-<p><em>样本3：只有frozen需求量大于平均值，这个应该是超市，冷冻食品需求量较多</em></p>
+<p><em>样本3：只有 frozen 需求量大于平均值，这个应该是超市，冷冻食品需求量较多</em></p>
 
 </div>
 </div>
@@ -12652,10 +12652,10 @@ Delicatessen score: -0.5311837232518248
 <li>Delicatessen score: -0.531184</li>
 </ul>
 <p><em>结论：</em></p>
-<p><em>Milk 得分远小于1，与消费习惯相关性非常弱，不相关</em></p>
-<p><em>Fresh, Frozen, Delicatessen 得分为负数，不相关</em></p>
-<p><em>Grocery 得分接近 1，与消费习惯相关性强</em></p>
-<p><em>Detergents_Paper 得分为中间，与消费习惯相关性较弱</em></p>
+<p><em>Milk 得分远小于1, 这个特征不能被预测，对于区分消费习惯有必要保留</em></p>
+<p><em>Fresh, Frozen, Delicatessen 得分为负数，这个特征不能被预测，对于区分消费习惯有必要保留</em></p>
+<p><em>Grocery 得分接近 1，这个特征能被预测，对于区分消费习惯没有必要保留</em></p>
+<p><em>Detergents_Paper 得分为中间，这个特征不能被很好预测，对于区分消费习惯有必要保留</em></p>
 
 </div>
 </div>
@@ -12722,7 +12722,7 @@ Delicatessen score: -0.5311837232518248
 <p><strong>回答:</strong></p>
 <p><em>有一定程度的相关性：</em></p>
 <p><em>根据散点图，可以看到 Detergents_Paper 与 Grocery 呈线性趋势，有相关性</em></p>
-<p><em>这个结果验证了尝试预测的哪个特征的相关性</em></p>
+<p><em>这个结果验证了尝试预测的那个特征的相关性</em></p>
 <p><em>数据不是正态分布的，数据成正偏态分布</em></p>
 <p><em>大多数的数据点分布在 0-20000 范围</em></p>
 
@@ -13823,7 +13823,6 @@ Delicatessen score: -0.5311837232518248
 <span class="n">n5</span> <span class="o">=</span> <span class="mf">0.0485</span>
 <span class="n">n6</span> <span class="o">=</span> <span class="mf">0.0204</span>
 
-
 <span class="k">print</span>  <span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span>
 
 <span class="k">print</span>  <span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span> <span class="o">+</span> <span class="n">n3</span> <span class="o">+</span> <span class="n">n4</span>
@@ -13861,7 +13860,7 @@ Delicatessen score: -0.5311837232518248
 <p><em>数据的第一个和第二个主成分总共表示的方差：0.7068</em></p>
 <p><em>前四个主成分总共表示的方差：0.9311</em></p>
 <p><em>第一个：Fresh 和 Frozen 有正向权重，Milk,Grocery和Detergents_Paper有负向权重。当权重为正，倾向在 Fresh 和 Frozen 消费，不倾向在Milk,Grocery和Detergents_Paper，为负则相反。判断为超市类</em></p>
-<p><em>第二个：Fresh, Milk, Grocery, Frozen, Detergents_Paper, Delicatessen都是负向权重。当权重为正，不倾向所有特征，为负则相反</em></p>
+<p><em>第二个：Fresh, Milk, Grocery, Frozen, Detergents_Paper, Delicatessen都是负向权重。当权重为负，倾向 Fresh, Frozen，Delicatessen, 这里忽略掉权重很小的 Milk，Grocery, Detergents_Paper ，为正则没有倾向</em></p>
 <p><em>第三个：Milk, Frozen 和 Delicatessen 有正向权重，Fresh，Grocery, Detergents_Paper 有负向权重。当权重为正，倾向 Frozen 和 Delicatessen 消费，不倾向 Fresh，Detergents_Paper，这里忽略掉权重很小的 Milk 和 Grocery 。为负则相反</em></p>
 <p><em>第四个：Milk, Grocery, Frozen, Detergents_Paper 有正向权重，Fresh, Delicatessen 有负向权重。当权重为正，倾向 Frozen, Detergents_Paper 消费，不倾向 Fresh, Delicatessen， 这里忽略掉权重很小的 Milk，Grocery。 为负则相反</em></p>
 
@@ -14123,7 +14122,7 @@ Delicatessen score: -0.5311837232518248
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xb924860&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xc1bc9b0&gt;</pre>
 </div>
 
 </div>
@@ -14530,121 +14529,14 @@ silhouette_score 6: 0.34999779752629756
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Segment0</span> <span class="o">=</span> <span class="n">compare_smaple</span><span class="p">(</span><span class="n">true_centers</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Segment0</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Segment0 = compare_smaple(true_centers, 0)</span>
+<span class="c1"># display(Segment0)</span>
 
-<span class="n">Segment1</span> <span class="o">=</span> <span class="n">compare_smaple</span><span class="p">(</span><span class="n">true_centers</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Segment1</span><span class="p">)</span>
+<span class="c1"># Segment1 = compare_smaple(true_centers, 1)</span>
+<span class="c1"># display(Segment1)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Fresh</th>
-      <th>Milk</th>
-      <th>Grocery</th>
-      <th>Frozen</th>
-      <th>Detergents_Paper</th>
-      <th>Delicatessen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Fresh</th>
-      <th>Milk</th>
-      <th>Grocery</th>
-      <th>Frozen</th>
-      <th>Detergents_Paper</th>
-      <th>Delicatessen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14655,8 +14547,8 @@ silhouette_score 6: 0.34999779752629756
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
 <p><em>通过比较 Segment0 和 Segment1 得出结论：</em></p>
-<p><em>Segment 0： 的各类数据与平均值差别不大，代表了旅馆/饭店/咖啡馆</em></p>
-<p><em>Segment 1： Milk, Grocery, Detergents_Paper 都超过了平均值，代表大的零售商</em></p>
+<p><em>Segment 0： 考虑 Fresh，Milk，Grocery，Frozen 占比较高，这些客户是Cluster 1代表的客户分类，旅馆/饭店/咖啡馆 </em></p>
+<p><em>Segment 1： 考虑 Fresh，Milk，Grocery，Frozen 占比较高，这些客户是Cluster 1代表的客户分类，旅馆/饭店/咖啡馆</em></p>
 
 </div>
 </div>
@@ -14713,7 +14605,7 @@ Sample point 2 predicted to be in Cluster 0
 <p><strong>回答:</strong></p>
 <p><em>sample0 和 sample1被预测到了 Cluster 1中，旅馆/饭店/咖啡馆</em></p>
 <p><em>sample2 被预测到了 Cluster 0中，应该是零售商</em></p>
-<p><em>与之前预测结果相同</em></p>
+<p><em>与之前问题1中自己的预测结果不相同，之前认为sample0和sample2是零售商，sample1是旅馆/饭店/咖啡馆</em></p>
 
 </div>
 </div>
