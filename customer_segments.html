@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 检查你的Python版本</span>
@@ -11820,7 +11820,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 引入这个项目需要的库</span>
@@ -11845,6 +11845,24 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Wholesale customers dataset has 440 samples with 6 features each.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -11859,7 +11877,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 显示数据集的一个描述</span>
@@ -11867,6 +11885,126 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+      <td>440.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>12000.297727</td>
+      <td>5796.265909</td>
+      <td>7951.277273</td>
+      <td>3071.931818</td>
+      <td>2881.493182</td>
+      <td>1524.870455</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>12647.328865</td>
+      <td>7380.377175</td>
+      <td>9503.162829</td>
+      <td>4854.673333</td>
+      <td>4767.854448</td>
+      <td>2820.105937</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.000000</td>
+      <td>55.000000</td>
+      <td>3.000000</td>
+      <td>25.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>3127.750000</td>
+      <td>1533.000000</td>
+      <td>2153.000000</td>
+      <td>742.250000</td>
+      <td>256.750000</td>
+      <td>408.250000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>8504.000000</td>
+      <td>3627.000000</td>
+      <td>4755.500000</td>
+      <td>1526.000000</td>
+      <td>816.500000</td>
+      <td>965.500000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>16933.750000</td>
+      <td>7190.250000</td>
+      <td>10655.750000</td>
+      <td>3554.250000</td>
+      <td>3922.000000</td>
+      <td>1820.250000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>112151.000000</td>
+      <td>73498.000000</td>
+      <td>92780.000000</td>
+      <td>60869.000000</td>
+      <td>40827.000000</td>
+      <td>47943.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -11882,7 +12020,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：从数据集中选择三个你希望抽样的数据点的索引</span>
@@ -12073,6 +12211,18 @@ div#notebook {
 </div>
 </div>
 
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>d:\ProgramData\Anaconda3\envs\py2\lib\site-packages\numpy\core\fromnumeric.py:52: FutureWarning: &#39;argmax&#39; is deprecated. Use &#39;idxmax&#39; instead. The behavior of &#39;argmax&#39; will be corrected to return the positional maximum in the future. Use &#39;series.values.argmax&#39; to get the position of the maximum now.
+  return getattr(obj, method)(*args, **kwds)
+</pre>
+</div>
 </div>
 
 <div class="output_area">
@@ -12334,7 +12484,7 @@ div#notebook {
 <p><strong>回答:</strong></p>
 <p><em>样本1：只有detergents_paper的需求量大于平均值，这个应该是零售商</em></p>
 <p><em>样本2：Fresh，Milk, Delicatessen 商品需求量都比较大，应该是饭馆一类的大型餐饮场所</em></p>
-<p><em>样本3：只有frozen需求量大于平均值，这个应该是咖啡馆</em></p>
+<p><em>样本3：只有frozen需求量大于平均值，这个应该是超市，冷冻食品需求量较多</em></p>
 
 </div>
 </div>
@@ -12360,7 +12510,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12502,9 +12652,10 @@ Delicatessen score: -0.5311837232518248
 <li>Delicatessen score: -0.531184</li>
 </ul>
 <p><em>结论：</em></p>
-<p><em>Milk 得分远小于1，与消费习惯关系不大</em></p>
-<p><em>Fresh, Grocery 得分接近 1，与消费习惯有关系</em></p>
-<p><em>Frozen, Detergents_Paper, Delicatessen 得分为中间，与消费习惯关系不明</em></p>
+<p><em>Milk 得分远小于1，与消费习惯相关性非常弱，不相关</em></p>
+<p><em>Fresh, Frozen, Delicatessen 得分为负数，不相关</em></p>
+<p><em>Grocery 得分接近 1，与消费习惯相关性强</em></p>
+<p><em>Detergents_Paper 得分为中间，与消费习惯相关性较弱</em></p>
 
 </div>
 </div>
@@ -12520,7 +12671,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 对于数据中的每一对特征构造一个散布矩阵</span>
@@ -12569,9 +12720,11 @@ Delicatessen score: -0.5311837232518248
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p>有一定程度的相关性</p>
-<p><em>Fresh, Grocery 有相关性</em></p>
+<p><em>有一定程度的相关性：</em></p>
+<p><em>根据散点图，可以看到 Detergents_Paper 与 Grocery 呈线性趋势，有相关性</em></p>
+<p><em>这个结果验证了尝试预测的哪个特征的相关性</em></p>
 <p><em>数据不是正态分布的，数据成正偏态分布</em></p>
+<p><em>大多数的数据点分布在 0-20000 范围</em></p>
 
 </div>
 </div>
@@ -12601,7 +12754,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：使用自然对数缩放数据</span>
@@ -12653,7 +12806,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过对数变换后的样本数据</span>
@@ -12760,7 +12913,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 对于每一个特征，找到值异常高或者是异常低的数据点</span>
@@ -13606,7 +13759,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：通过在good_data上使用PCA，将其转换成和当前特征数一样多的维度</span>
@@ -13660,7 +13813,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">n1</span> <span class="o">=</span> <span class="mf">0.4430</span>
@@ -13707,7 +13860,10 @@ Delicatessen score: -0.5311837232518248
 <p><strong>回答:</strong></p>
 <p><em>数据的第一个和第二个主成分总共表示的方差：0.7068</em></p>
 <p><em>前四个主成分总共表示的方差：0.9311</em></p>
-<p><em>前四个主成分：Fresh，Milk，Grocery，Frozen。这四个占比较大可以代表超市类型</em></p>
+<p><em>第一个：Fresh 和 Frozen 有正向权重，Milk,Grocery和Detergents_Paper有负向权重。当权重为正，倾向在 Fresh 和 Frozen 消费，不倾向在Milk,Grocery和Detergents_Paper，为负则相反。判断为超市类</em></p>
+<p><em>第二个：Fresh, Milk, Grocery, Frozen, Detergents_Paper, Delicatessen都是负向权重。当权重为正，不倾向所有特征，为负则相反</em></p>
+<p><em>第三个：Milk, Frozen 和 Delicatessen 有正向权重，Fresh，Grocery, Detergents_Paper 有负向权重。当权重为正，倾向 Frozen 和 Delicatessen 消费，不倾向 Fresh，Detergents_Paper，这里忽略掉权重很小的 Milk 和 Grocery 。为负则相反</em></p>
+<p><em>第四个：Milk, Grocery, Frozen, Detergents_Paper 有正向权重，Fresh, Delicatessen 有负向权重。当权重为正，倾向 Frozen, Detergents_Paper 消费，不倾向 Fresh, Delicatessen， 这里忽略掉权重很小的 Milk，Grocery。 为负则相反</em></p>
 
 </div>
 </div>
@@ -13723,7 +13879,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过PCA转换的sample log-data</span>
@@ -13827,7 +13983,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：通过在good data上进行PCA，将其转换成两个维度</span>
@@ -13861,7 +14017,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 展示经过两个维度的PCA转换之后的样本log-data</span>
@@ -13944,7 +14100,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -13961,13 +14117,13 @@ Delicatessen score: -0.5311837232518248
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[16]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xbee2908&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xb924860&gt;</pre>
 </div>
 
 </div>
@@ -14062,7 +14218,7 @@ Delicatessen score: -0.5311837232518248
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：在降维后的数据上使用你选择的聚类算法</span>
@@ -14173,7 +14329,7 @@ silhouette_score 6: 0.34999779752629756
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">clusterer</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -14189,7 +14345,7 @@ silhouette_score 6: 0.34999779752629756
 
 <span class="c1"># TODO：预测在每一个转换后的样本点的类</span>
 <span class="n">sample_preds</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pca_samples</span><span class="p">)</span>
-<span class="c1">#     print &#39;sample_preds:&#39;,sample_preds</span>
+<span class="c1"># print &#39;sample_preds:&#39;,sample_preds</span>
 
 <span class="c1"># TODO：计算选择的类别的平均轮廓系数（mean silhouette coefficient）</span>
 <span class="n">labels</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">labels_</span>
@@ -14222,7 +14378,7 @@ silhouette_score 6: 0.34999779752629756
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 从已有的实现中展示聚类的结果</span>
@@ -14272,7 +14428,7 @@ silhouette_score 6: 0.34999779752629756
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：反向转换中心点</span>
@@ -14371,7 +14527,7 @@ silhouette_score 6: 0.34999779752629756
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">Segment0</span> <span class="o">=</span> <span class="n">compare_smaple</span><span class="p">(</span><span class="n">true_centers</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -14517,7 +14673,7 @@ silhouette_score 6: 0.34999779752629756
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 显示预测结果</span>
@@ -14555,7 +14711,9 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p><em>Segment 1 最有代表性，零售商有多类数据是大于平均值的，和之前预测结果相同</em></p>
+<p><em>sample0 和 sample1被预测到了 Cluster 1中，旅馆/饭店/咖啡馆</em></p>
+<p><em>sample2 被预测到了 Cluster 0中，应该是零售商</em></p>
+<p><em>与之前预测结果相同</em></p>
 
 </div>
 </div>
@@ -14606,7 +14764,7 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -14680,7 +14838,7 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 根据‘Channel‘数据显示聚类的结果</span>
@@ -14728,8 +14886,9 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答：</strong></p>
-<p><em>聚类算法和聚类点的数目，不是很好，多了一个聚类点</em></p>
-<p><em>0 和 2 可以划分出来零售商和旅馆/饭店/咖啡馆</em></p>
+<p><em>聚类算法和聚类点的数目与内在分布基本一致，</em></p>
+<p><em>Cluster 0 可以划分为零售商</em></p>
+<p><em>Cluster 1 可以划分为旅馆/饭店/咖啡馆</em></p>
 <p><em>这个分类和前面的定义基本一致</em></p>
 
 </div>
